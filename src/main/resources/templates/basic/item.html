@@ -20,6 +20,9 @@
         <h2>상품 상세</h2>
     </div>
 
+    <!-- 추가 -->
+    <h2 th:if="${param.status}" th:text="|[ ${item.itemName} ] 상품 저장이 완료되었습니다.|"></h2><br>
+
     <div>
         <label for="itemId">상품 ID</label>
         <input type="text" id="itemId" name="itemId" class="form-control" value="1" th:value="${item.id}" readonly>
